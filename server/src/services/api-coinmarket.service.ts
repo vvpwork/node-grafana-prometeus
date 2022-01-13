@@ -1,12 +1,13 @@
-import { TypeCoinFromCoinmarket, TypeQuoteFromCoinmarket } from 'src/types';
+import { TypeCoinFromCoinmarket } from '../types';
 import { logger } from '.';
 import { Axios } from './axios.service';
+import { coinMarketKey } from '../config';
 
 export class ApiCoinmarket {
   coin: Axios;
   constructor() {
     this.coin = new Axios('https://pro-api.coinmarketcap.com', {
-      'X-CMC_PRO_API_KEY': '4dac9e9d-b5d5-4efd-b34a-27e1f9f48393',
+      'X-CMC_PRO_API_KEY': coinMarketKey,
     });
   }
 

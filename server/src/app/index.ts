@@ -6,6 +6,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import { logger } from '../services';
 import { kpiRoute } from '../routes';
+import { port } from '../config';
 
 // ***********************
 
@@ -45,6 +46,6 @@ process.on('uncaughtException', (error: Error) => {
   process.exit(1);
 });
 
-app.listen(9200, () => {
-  logger.info(`Server start on port ${9200}`);
+app.listen(port, () => {
+  logger.info(`Server start on port ${port}`);
 });

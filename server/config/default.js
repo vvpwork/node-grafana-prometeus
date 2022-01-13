@@ -15,5 +15,6 @@ module.exports = {
   },
   server: {
     port: process.env.APP_PORT || 8080,
+    coinMarketKey: process.env.COIN_KEY || '232c2875-e140-44b1-8166-ec0d10388919',
   },
 };

@@ -12,6 +12,7 @@ export type TypeRPC = {
 };
 export type TypeServer = {
   port: number;
+  coinMarketKey: string;
 };
 
 export type TypeAccountAnchor = {
@@ -72,4 +73,3 @@ export type TypeKpiModel = {
   tbc: string;
   tdb: string;
 };
-

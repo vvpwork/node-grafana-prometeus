@@ -7,4 +7,4 @@ const server_config: TypeServer = config.get('server');
 export const db_config: TypeDbConfig = config.get('db');
 export const infura_url_mainnet = `https://mainnet.infura.io/v3/${rpc_config.infuraId}`;
 export const time_to_request = rpc_config.timeToRequest;
-export const { port } = server_config;
+export const { port, coinMarketKey } = server_config;

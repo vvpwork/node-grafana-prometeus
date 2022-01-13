@@ -8,11 +8,8 @@ RUN  yarn
 
 COPY . /app
 
-RUN rm ./node_modules/mongoose/index.d.ts
-
 RUN yarn build
 
+EXPOSE 9200
 
-EXPOSE 8080
-
-CMD  yarn start
+CMD  ["yarn", "start:prod" ]
